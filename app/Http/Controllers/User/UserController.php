@@ -7,16 +7,26 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function input()
+    public function list()
     {
-        return view('Input');
-    }
+        $no = 1;
+        // collection of array
+//        $data = collect(['irfan', 'dimas', 'angga'])->map(function ($data, $key) use ($no) {
+//            return ($no + $key) . '. ' . $data;
+//        });
 
-    public function penjumlahan(Request $request)
-    {
-        $firstNumber = $request->first_number;
-        $secondNumber = $request->second_number;
-        $hasil = $firstNumber + $secondNumber;
-        return view('Penjumlahan', compact('hasil'));
+        // collcetion of object
+        $data = collect([
+            (object) [
+                'name' => 'irfan',
+                'age' => 19
+            ],
+            (object) [
+                'name' => 'dimas',
+                'age' => 13
+            ],
+        ]);
+
+        return view('UserList', compact('data'));
     }
 }

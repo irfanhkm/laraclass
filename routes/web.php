@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/hello', 'HelloController@index');
-Route::get('/input', 'User\UserController@input');
-Route::post('/hitung', 'User\UserController@penjumlahan')->name('perhitungan');
+Route::get('/student', 'Student\StudentController@list')->name('student.list');
+Route::get('/student/create', 'Student\StudentController@create')->name('student.create');
+Route::post('/student', 'Student\StudentController@submit')->name('student.store');
+Route::get('/student/{id}', 'Student\StudentController@detail')->name('student.detail');
+Route::get('/student/edit/{id}', 'Student\StudentController@edit')->name('student.edit');
+Route::put('/student/{id}', 'Student\StudentController@update')->name('student.update');
+Route::get('/student/delete/{id}', 'Student\StudentController@delete')->name('student.delete');
