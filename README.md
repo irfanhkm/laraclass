@@ -19,4 +19,6 @@
     (26 April 2020)
     - Link powerpoint : https://docs.google.com/presentation/d/1P1mGXDJvUd6qyk70A-p4QHvCL6zzdMACGphKGCQtlB8/edit#slide=id.p
 
-- Week 2 : Database Operation (CRUD) (03 Mei 2020)
+- Week 2 : Database Operation (CRUD) 
+    (03 Mei 2020)
+    - Link powerpoint : https://docs.google.com/presentation/d/1XWnVjVJ6GFqUd8VrcZy9rDxBXi8YPviUKO6nzTs1Bfo/edit?usp=sharing
